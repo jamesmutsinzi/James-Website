@@ -1,49 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>James Mutsinzi | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>James Mutsinzi | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <div class="logo">JM</div>
-        <div class="nav-links">
-            <a href="#work">Work</a>
-            <a href="#info">Info</a>
-        </div>
-    </nav>
+<!-- NAV -->
+<nav class="nav container">
+  <div class="logo">JM</div>
 
-    <main>
-        <header>
-            <h1>James Mutsinzi</h1>
-            <p class="subline">Architectural Designer & Creative Technologist.</p>
-        </header>
+  <!-- Mobile menu toggle using checkbox hack -->
+  <input type="checkbox" id="menu-toggle" />
+  <label for="menu-toggle" class="nav-toggle">&#9776;</label>
 
-        <section id="work" class="grid">
-            <div class="project-card">
-                <div class="image-placeholder"></div>
-                <div class="project-meta">
-                    <span>01</span>
-                    <h3>Project Name</h3>
-                </div>
-            </div>
-            <div class="project-card">
-                <div class="image-placeholder"></div>
-                <div class="project-meta">
-                    <span>02</span>
-                    <h3>Project Name</h3>
-                </div>
-            </div>
-        </section>
-    </main>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
 
-    <footer>
-        <p>© 2026</p>
-        <a href="mailto:hello@jamesmutsinzi.com">Contact</a>
-    </footer>
+<!-- HERO -->
+<header class="hero container">
+  <div class="hero-card">
+    <h1>James Mutsinzi</h1>
+    <p>Creative Technologist • AI • Design • Development</p>
+    <a href="#contact" class="btn">Contact Me</a>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about" class="container section">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>I build intelligent systems and digital experiences combining AI, data, and design.</p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="container section">
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>JavaScript</span>
+      <span>AI / ML</span>
+      <span>Data Science</span>
+      <span>UI/UX</span>
+      <span>APIs</span>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <h2 class="section-title">Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg?auto=compress&cs=tinysrgb&w=800" alt="AI Job Platform" class="project-img">
+      <h3>AI Job Platform</h3>
+      <p>Smart job matching using NLP and automation.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/4145190/pexels-photo-4145190.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Climate AI Tool" class="project-img">
+      <h3>Climate AI Tool</h3>
+      <p>Predicts environmental risks using data models.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="https://images.pexels.com/photos/1181675/pexels-photo-1181675.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Data Dashboard" class="project-img">
+      <h3>Data Dashboard</h3>
+      <p>Interactive analytics dashboard built with Python & JS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="container section">
+  <div class="card contact">
+    <h2>Contact</h2>
+    <p>Email:</p>
+    <a href="mailto:jamesmutsinzi13@gmail.com">jamesmutsinzi13@gmail.com</a>
+  </div>
+</section>
+
+<!-- BACK TO TOP LINK -->
+<a href="#top" class="back-to-top">&#8679;</a>
+
+<!-- FOOTER -->
+<footer class="container footer">
+  <p>© 2026 James Mutsinzi</p>
+</footer>
 
 </body>
 </html>
